@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Web App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>ATM Operations</h2>
+
+  <div>
+    <h3>Create PIN</h3>
+    <input type="text" id="createPin" placeholder="Enter new PIN">
+    <button onclick="createPin()">Set PIN</button>
+  </div>
+
+  <div>
+    <h3>Deposit</h3>
+    <input type="text" id="depositPin" placeholder="Enter PIN">
+    <input type="number" id="depositAmount" placeholder="Amount">
+    <button onclick="deposit()">Deposit</button>
+  </div>
+
+  <div>
+    <h3>Withdraw</h3>
+    <input type="text" id="withdrawPin" placeholder="Enter PIN">
+    <input type="number" id="withdrawAmount" placeholder="Amount">
+    <button onclick="withdraw()">Withdraw</button>
+  </div>
+
+  <div>
+    <h3>Check Balance</h3>
+    <input type="text" id="checkPin" placeholder="Enter PIN">
+    <button onclick="checkBalance()">Check Balance</button>
+  </div>
+
+  <p id="output" style="color:blue; font-weight:bold;"></p>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
