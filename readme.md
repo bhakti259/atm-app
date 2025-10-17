@@ -41,7 +41,7 @@ atm_app/
 ⚙️ Setup & Installation
 ------------------------------------------------------------
 1️⃣ Clone this repository
-    git clone https://github.com/<yourusername>/atm_app.git
+    git clone https://github.com/bhakti259/atm_app.git
     cd atm_app
 
 2️⃣ Create a virtual environment
