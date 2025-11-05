@@ -17,6 +17,7 @@ This project demonstrates backend API handling, frontend-backend integration, an
 ------------------------------------------------------------
 Frontend: HTML, CSS, JavaScript (Fetch API)
 Backend: Python, Flask, Flask-CORS
+Containerization: Docker
 Version Control: Git & GitHub
 
 ------------------------------------------------------------
@@ -40,9 +41,34 @@ atm_app/
 ------------------------------------------------------------
 ⚙️ Setup & Installation
 ------------------------------------------------------------
+
+## Option 1: Run with Docker (Recommended)
+
+### 🐳 Using Docker Hub (Pre-built Image)
+```bash
+# Pull and run the pre-built image
+docker pull bsk25/fast-api-flask-atm-app:latest
+docker run -p 5000:5000 bsk25/fast-api-flask-atm-app:latest
+```
+
+### 🔧 Build Docker Image Locally
+```bash
+# Clone the repository
+git clone https://github.com/bhakti259/atm-app.git
+cd atm-app
+
+# Build the Docker image
+docker build -t atm-app .
+
+# Run the container
+docker run -p 5000:5000 atm-app
+```
+
+## Option 2: Run Locally with Python
+
 1️⃣ Clone this repository
-    git clone https://github.com/bhakti259/atm_app.git
-    cd atm_app
+    git clone https://github.com/bhakti259/atm-app.git
+    cd atm-app
 
 2️⃣ Create a virtual environment
     python -m venv venv
@@ -59,7 +85,8 @@ atm_app/
 5️⃣ Run the application
     python app.py
 
-Then open your browser and visit: http://127.0.0.1:5000
+## 🌐 Access the Application
+Then open your browser and visit: http://localhost:5000
 
 ------------------------------------------------------------
 🔌 API Endpoints
